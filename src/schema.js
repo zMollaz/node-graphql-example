@@ -1,6 +1,6 @@
 import { gql } from 'apollo-server';
 
-const typeDefs = gql
+export const typeDefs = gql
 `
 type Student {
   id: ID!
@@ -20,7 +20,4 @@ type Mutation {
   registerStudent(email: String!, fullName: String!, dept: String): Student!
   enroll(id: ID!): Student
 }
-`
-module.exports = {
-  typeDefs,
-}
+`;

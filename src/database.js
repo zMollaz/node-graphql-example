@@ -1,5 +1,5 @@
 
-const students = [
+export const students = [
   {
     id: 1,
     email: 'ada@telixia.com',
@@ -22,7 +22,3 @@ const students = [
     enrolled: false,
   },
 ]
-
-module.exports = {
-  students,
-}

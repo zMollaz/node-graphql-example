@@ -1,6 +1,6 @@
-import { students } from "./database";
+import {students} from "./database.js";
 
-const resolvers = {
+export const resolvers = {
 
   Student: {
       id: (parent, args, context, info) => parent.id,
@@ -37,9 +37,4 @@ const resolvers = {
     },
   },
 
-}
-
-
-module.exports = {
-  resolvers,
-}
+};
